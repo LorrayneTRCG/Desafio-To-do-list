@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("./stock-photo-notepad-blank-white-sheet-checker.jpg");
+    filter: contrast(1);
+}
+
+h1 {
+    color: #ff1493;
+    filter: none;
+}
+button {
+    border: 2px;
+    border-radius: 6px;
+    background-color: rgb(0, 255, 242);
+    color: rgb(151, 0, 88);
+    text-align: center;
+    padding: 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(187, 8, 112);
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+:checked + label {
+  text-decoration: line-through;
+  color: rgb(243, 11, 11);
+}
